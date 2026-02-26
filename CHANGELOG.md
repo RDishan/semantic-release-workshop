@@ -1,3 +1,10 @@
+# [1.1.0](https://github.com/RDishan/semantic-release-workshop/compare/v1.0.0...v1.1.0) (2026-02-26)
+
+
+### Features
+
+* **users:** add pagination and search to get/user ([669755e](https://github.com/RDishan/semantic-release-workshop/commit/669755e98234ae76b100b0f7565907d758fce3e6))
+
 # 1.0.0 (2026-02-26)
 
 
