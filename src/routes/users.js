@@ -70,6 +70,12 @@ router.put('/:id', (req, res) => {
   }
 
   const { name, email, role } = req.body;
+  if (email) {
+    const existingUser = users.find((u) => u.email === email && u.id !== id);
+    if (existingUser) {
+      return res.status(409).json({ error: 'A user with this email already exists' });
+    }
+  }
   users[index] = { ...users[index], ...(name && { name }), ...(email && { email }), ...(role && { role }) };
 
   res.json(users[index]);
